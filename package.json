@@ -1,0 +1,34 @@
+{
+  "name": "n8n-nodes-eu-b2b-registry",
+  "version": "1.0.0",
+  "description": "n8n Community Node for 16 European Official Company Registries & B2B Lead Directories (Norway Brreg, Sweden Bolagsverket/Hitta, Finland YTJ, Denmark CVR, Poland KRS/NIP, Italy Registro Imprese, Netherlands KVK, Belgium KBO, Germany Gelbe Seiten, Austria WKO, Switzerland Local.ch).",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "apify",
+    "european-b2b",
+    "kvk",
+    "brreg",
+    "krs",
+    "cvr",
+    "ytj",
+    "bolagsverket",
+    "lead-generation",
+    "kyb"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "samdhitosaja",
+    "url": "https://apify.com/samdhitosaja"
+  },
+  "main": "index.js",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ApifyEuRegistryApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/EuCompanyRegistry/EuCompanyRegistry.node.js"
+    ]
+  }
+}
